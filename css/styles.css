@@ -1,0 +1,10 @@
+h1,h2,h3{
+  text-align: center;
+}
+.form-control{
+  text-align-last: center;
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  margin-top: 40px;
+}
