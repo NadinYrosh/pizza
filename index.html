@@ -11,50 +11,55 @@
     <div class="container-fluid">
       <h1>PIZZA time!</h1>
       <form>
-        <div class="size">
+        <div class="form-group">
           <h2>Please select size:</h2>
           <select class="form-control">
-            <option>Small</option>
-            <option>Medium</option>
-            <option>Large</option>
+            <option class="size">Small</option>
+            <option class="size">Medium ($3)</option>
+            <option class="size">Large ($5)</option>
           </select>
           <br>
-        </div>
+      </div>
 
         <div class="toppings">
           <h2>Add extra topping to you favorite pizza:</h2>
           <div class="top1">
             <h3>Meat:</h3>
             </div>
-            <select class="form-control">
-              <option>Ham</option>
-              <option>Salami</option>
-              <option>Pepperoni</option>
+            <select class="form-control" id = "size">
+              <option>Ham (+$3)</option>
+              <option>Salami (+$3)</option>
+              <option>Pepperoni (+$3)</option>
             </select>
           <br>
 
-          <div class="top2">
+          <!-- <div class="top2">
             <h3>Veggie:</h3>
             <select class="form-control">
-              <option>Bell peppers</option>
-              <option>Tomatos</option>
-              <option>Broccoli</option>
+              <option>Bell peppers (+$2)</option>
+              <option>Tomatos (+$2)</option>
+              <option>Broccoli (+$2)</option>
             </select>
           </div>
-          <br>
+          <br> -->
 
-          <div class="top3">
+          <!-- <div class="top3">
             <h3>Cheese:</h3>
             <select class="form-control">
-              <option>Mozzarella</option>
-              <option>Cheddar</option>
-              <option>Parmesan</option>
+              <option>Mozzarella (+$3)</option>
+              <option>Cheddar (+$3)</option>
+              <option>Parmesan (+$3)</option>
             </select>
             <br>
-          </div>
+          </div> -->
         </div>
-        <button type="submit" class="btn btn-success">Submit order</button>
+        <button id="submit-order" type="submit" class="btn btn-success">Submit order</button>
       </form>
+      <div id= order>
+        <ul>
+          <!-- ///thats where i will display order result// -->
+        </u>
+      </div>
     </div>
   </body>
 </html>
