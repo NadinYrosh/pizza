@@ -10,28 +10,30 @@
   <body>
     <div class="container-fluid">
       <h1>PIZZA time!</h1>
-      <form>
+      <form id="submit-order">
         <div class="form-group">
           <h2>Please select size:</h2>
-          <select class="form-control">
-            <option class="size">Small</option>
-            <option class="size">Medium ($3)</option>
-            <option class="size">Large ($5)</option>
+          <select id="size-list" class="form-control">
+            <option value="small" class="size">Small ($8)</option>
+            <option value="medium" class="size">Medium ($11)</option>
+            <option value="large" class="size">Large ($16)</option>
           </select>
           <br>
-      </div>
+        </div>
+        <button type="submit" class="btn btn-success">Submit order</button>
+      </form>
 
-        <div class="toppings">
+        <!-- <div class="toppings">
           <h2>Add extra topping to you favorite pizza:</h2>
           <div class="top1">
             <h3>Meat:</h3>
             </div>
             <select class="form-control" id = "size">
-              <option>Ham (+$3)</option>
+              <option value="7">Ham (+$3)</option>
               <option>Salami (+$3)</option>
               <option>Pepperoni (+$3)</option>
             </select>
-          <br>
+          <br> -->
 
           <!-- <div class="top2">
             <h3>Veggie:</h3>
@@ -52,14 +54,7 @@
             </select>
             <br>
           </div> -->
-        </div>
-        <button id="submit-order" type="submit" class="btn btn-success">Submit order</button>
-      </form>
-      <div id= order>
-        <ul>
-          <!-- ///thats where i will display order result// -->
-        </u>
-      </div>
+        <!-- </div> -->
     </div>
   </body>
 </html>
