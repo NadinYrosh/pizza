@@ -12,6 +12,7 @@ $(document).ready(function() {
     }
     var newPizza = new Pizza(pizzaSize, toppings);
     var result = newPizza.costCalc();
+    $("#total-price").text("$" + result);
     console.log(result);
   });
 });
