@@ -4,9 +4,15 @@ $(document).ready(function() {
   $("#submit-order").submit(function(event) {
     event.preventDefault();
     var pizzaSize = $("#size-list").val();
-    var toppings;
+    var toppings = [];
+    for(var i = 1; i < 3; i++) {
+      if($('#top' + i).is(':checked')) {
+        toppings.push($('#top' + i).val());
+      }
+    }
     var newPizza = new Pizza(pizzaSize, toppings);
     var result = newPizza.costCalc();
+    console.log(result);
   });
 });
 
@@ -23,30 +29,21 @@ Pizza.prototype.costCalc = function(){
   ///fix it, so it can calculate the cost!///// ;
   var total;
   if (this.inputSize === "small"){
-    return total = 8;
+    total = 8;
   } else if (this.inputSize === "medium"){
-    return total = 11;
+    total = 11;
   } else {
-    return total = 16;
+    total = 16;
   }
 
-  // for (i =0; i <= this.toppings.length; i++){
-  //   if (this.toppings.length <= 1){
-  //     total;
-  //   } else {
-  //     total += this.toppings.length *1;
-  //   }
-  // }
+  this.inputToppings.forEach(function(topping){
+    console.log(topping)
+    if(topping === 'ham') {
+      total = total + 3;
+    } else if (topping === 'mozarella') {
+      total = total + 2;
+    }
+  });
+
   return total;
 }
-
-// var pizzaOrder = function(){
-//   var orderedItems = [];
-//   var userInput =
-//   var size = ["Small", "Medium", "Large"];
-//   var toppings = ["Ham", "Salami", "Pepperoni", "Bell pepers", "Tomatos", "Brovoli"]
-//   toppings.forEach(function(topping){
-//     if (var i=0; i = )
-//   })
-//   return orderedItems;
-// };
