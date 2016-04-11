@@ -1,4 +1,4 @@
-_Pizza Order_
+#_Pizza Order_
 
 _Here you can get price for your favorite pizza._
 
@@ -6,7 +6,7 @@ _Here you can get price for your favorite pizza._
 
 ## Description
 
-_{This os a simple webpage where you can chose size and extra toppings to your pizza order.  }_
+_This os a simple webpage where you can chose size and extra toppings to your pizza order. _
 
 ## Setup/Installation Requirements
 
